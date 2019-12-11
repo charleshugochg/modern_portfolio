@@ -102,6 +102,10 @@
         &.show {
             transform: translate3d(0, 0, 0);
         }
+
+        &.current > a {
+            color: $secondary-color;
+        }
     }
 
     .menu-link {
@@ -114,10 +118,6 @@
         text-transform: uppercase;
         text-decoration: none;
         @include easeOut;
-
-        &.selected {
-            color: $secondary-color;
-        }
 
         &:hover {
             color: $secondary-color;

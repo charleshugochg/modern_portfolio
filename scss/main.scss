@@ -122,6 +122,31 @@ main {
     }
 }
 
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div {
+        border: #fff 3px solid;
+        padding: 1.5rem 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
+
 .btn {
     display: block;
     font-family: inherit;
